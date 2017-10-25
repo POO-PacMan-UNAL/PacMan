@@ -2,29 +2,15 @@ package Data;
 
 import java.util.Random;
 
-public class Blinky extends Ghost {
+public class Blinky {
+    
+    // Esta clase no la borré aún porque tiene el código del movimiento del fantasma
 
-    private static int[] vector = new int[1];
+    /*private static int[] vector = new int[1];
     private static int movementG2;
     private static int movementG;
     private static int i = 16;
     private static int j = 25;
-
-    public static int getI() {
-        return i;
-    }
-
-    public static void setI(int i) {
-        Blinky.i = i;
-    }
-
-    public static int getJ() {
-        return j;
-    }
-
-    public static void setJ(int j) {
-        Blinky.j = j;
-    }
 
     public static void movementBlinky(int getMovementG, int[][] boardIntegers, int i, int j) {
 
@@ -81,19 +67,6 @@ public class Blinky extends Ghost {
             }
         }
 
-    }
-
-    public int getMovementG() {
-        return movementG;
-    }
-
-    public void setMovementG(int movementG) {
-        Blinky.movementG = movementG;
-    }
-
-    @Override
-    public String toString() {
-        return "♥";
-    }
+    }*/
 
 }

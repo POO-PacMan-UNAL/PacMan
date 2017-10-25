@@ -1,24 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Data;
 
-public abstract class Square {
+/**
+ *
+ * @author Angie Escobar
+ */
+public class Square {
+    
+    private static int row;
+    private static int column;
+    private static int index;
 
-    private static int i;
-    private static int j;
-
-    public static int getI() {
-        return i;
+    public Square(int row, int column, int index) {
+        this.row = row;
+        this.column = column;
+        this.index = index;
     }
 
-    public static void setI(int i) {
-        Square.i = i;
+    public int getRow() {
+        return row;
     }
 
-    public static int getJ() {
-        return j;
+    public void setRow(int row) {
+        this.row = row;
     }
 
-    public static void setJ(int j) {
-        Square.j = j;
+    public int getColumn() {
+        return column;
     }
 
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+ 
 }

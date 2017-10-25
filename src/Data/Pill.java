@@ -1,33 +1,27 @@
 package Data;
 
-public class Ghost {
+public class Pill {
     
-    private Square squareG;
-    private String nombre;
+    private Square squareP;
     private String symbol;
     private String image;
+    
+    /*Pill es la clase que agrupa los pacdocts, las píldoras de poder y las frutas, es decir, lo que el PacMan se
+    puede comer como no se que tipo de atributo se coloca para identificar que hay varios tipos de pastillas
+    */
 
-    public Ghost(Square squareG, String nombre, String symbol, String image) {
-        this.squareG = squareG;
-        this.nombre = nombre;
+    public Pill(Square squareP, String symbol, String image) {
+        this.squareP = squareP;
         this.symbol = symbol;
         this.image = image;
     }
 
     public Square getSquare() {
-        return squareG;
+        return squareP;
     }
 
     public void setSquare(Square square) {
-        this.squareG = square;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.squareP = square;
     }
 
     public String getSymbol() {
@@ -45,5 +39,5 @@ public class Ghost {
     public void setImage(String image) {
         this.image = image;
     }
-   
+
 }

@@ -1,33 +1,23 @@
 package Data;
 
-public class Ghost {
-    
-    private Square squareG;
-    private String nombre;
+public class Wall {
+        
+    private Square squareW;
     private String symbol;
     private String image;
 
-    public Ghost(Square squareG, String nombre, String symbol, String image) {
-        this.squareG = squareG;
-        this.nombre = nombre;
+    public Wall(Square squareW, String symbol, String image) {
+        this.squareW = squareW;
         this.symbol = symbol;
         this.image = image;
     }
 
     public Square getSquare() {
-        return squareG;
+        return squareW;
     }
 
     public void setSquare(Square square) {
-        this.squareG = square;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.squareW = square;
     }
 
     public String getSymbol() {
@@ -45,5 +35,5 @@ public class Ghost {
     public void setImage(String image) {
         this.image = image;
     }
-   
+    
 }

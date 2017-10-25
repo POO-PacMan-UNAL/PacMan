@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Methods {
 
-    public static void startGame() {
+    /*public static void startGame() {
 
         boolean condition = true;
         String movement;
@@ -16,8 +16,8 @@ public class Methods {
         
         while (condition) {
             fillMatrix(Board.getObjectsBoard(), Board.getIntegersBoard());
-            PacManUI.printMatrix(Board.getObjectsBoard());
-            movement = PacManUI.readMovement();
+            UIConsole.printMatrix(Board.getObjectsBoard());
+            movement = UIConsole.readMovement();
             if (PacMan.movementPacMan(movement, Board.getIntegersBoard(), PacMan.getI(), PacMan.getJ()) == false) {
                 condition = false;
             } else {
@@ -28,7 +28,7 @@ public class Methods {
             movementG = (int) (rnd.nextDouble() * 5 + -2);
             Blinky.movementBlinky(movementG, Board.getIntegersBoard(), Blinky.getI(), Blinky.getJ());
             if (Blinky.getI() == PacMan.getI() && Blinky.getJ() == PacMan.getJ()) {
-                PacManUI.lost();
+                UIConsole.lost();
                 break;
             }
         }
@@ -58,10 +58,10 @@ public class Methods {
                     objectsBoard[i][j] = new Wall2();
                 }
                 if (integersBoard[i][j] == 3) {
-                    objectsBoard[i][j] = new PacDot();
+                    objectsBoard[i][j] = new Wall();
                 }
                 if (integersBoard[i][j] == 4) {
-                    objectsBoard[i][j] = new PowerPellet();
+                    objectsBoard[i][j] = new Pill();
                 }
                 if (integersBoard[i][j] == 5) {
                     objectsBoard[i][j] = new PacMan();
@@ -92,16 +92,16 @@ public class Methods {
                 }
             }
         }
-        PacDot.setPacDotsRemaining(counter);
-        if (PacDot.getPacDotsRemaining() == 0) {
+        Wall.setPacDotsRemaining(counter);
+        if (Wall.getPacDotsRemaining() == 0) {
             fillMatrix(Board.getObjectsBoard(), Board.getIntegersBoard());
-            PacManUI.printMatrix(Board.getObjectsBoard());
-            PacManUI.win();
+            UIConsole.printMatrix(Board.getObjectsBoard());
+            UIConsole.win();
             return false;
         } else {
             return true;
         }
 
-    }
+    }*/
 
 }

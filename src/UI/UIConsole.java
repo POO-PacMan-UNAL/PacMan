@@ -3,7 +3,7 @@ package UI;
 import java.util.Scanner;
 import Data.*;
 
-public class PacManUI {
+public class UIConsole {
 
     public static void welcome() {
         System.out.println("********************************************************************");

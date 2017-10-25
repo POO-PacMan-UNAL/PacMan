@@ -1,48 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Data;
 
-public abstract class Board {
+/**
+ *
+ * @author Angie Escobar
+ */
+public class Board {
+    
+    private Square[][] board;
 
-    private static Square[][] objectsBoard = new Square[18][27];
-    private static int[][] integersBoard = new int[18][27];
-    private static int[][] fixedIntegerBoard = {
-        {1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1},
-        {1, 8, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 7, 1},
-        {1, 4, 1, 2, 2, 1, 3, 1, 2, 2, 2, 1, 3, 1, 3, 1, 2, 2, 2, 1, 3, 1, 2, 2, 1, 4, 1},
-        {1, 3, 1, 2, 2, 1, 3, 1, 2, 2, 2, 1, 3, 2, 3, 1, 2, 2, 2, 1, 3, 1, 2, 2, 1, 3, 1},
-        {1, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 1},
-        {1, 2, 2, 2, 2, 1, 3, 1, 1, 3, 1, 2, 2, 2, 2, 2, 1, 3, 1, 1, 3, 1, 2, 2, 2, 2, 1},
-        {1, 2, 2, 2, 2, 1, 3, 2, 2, 3, 1, 2, 2, 2, 2, 2, 1, 3, 2, 2, 3, 1, 2, 2, 2, 2, 1},
-        {1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1},
-        {1, 3, 1, 2, 2, 1, 3, 1, 2, 2, 2, 1, 3, 1, 3, 1, 2, 2, 2, 1, 3, 1, 2, 2, 1, 3, 1},
-        {1, 3, 1, 2, 2, 1, 3, 1, 2, 2, 2, 1, 3, 2, 3, 1, 2, 2, 2, 1, 3, 1, 2, 2, 1, 3, 1},
-        {1, 4, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 5, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 4, 1},
-        {1, 2, 1, 3, 1, 1, 3, 2, 2, 3, 1, 2, 2, 2, 2, 2, 1, 3, 2, 2, 3, 1, 1, 3, 1, 2, 1},
-        {1, 2, 1, 3, 2, 2, 3, 1, 1, 3, 1, 2, 2, 2, 2, 2, 1, 3, 1, 1, 3, 2, 2, 3, 1, 2, 1},
-        {1, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 1, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 1},
-        {1, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 3, 1, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 3, 1},
-        {1, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 3, 2, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 3, 1},
-        {1, 9, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 1},
-        {1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1}
-    };
-
-    public static int[][] getFixedIntegerBoard() {
-        return fixedIntegerBoard;
+    public Board(Square[][] board) {
+        this.board = board;
     }
 
-    public static Square[][] getObjectsBoard() {
-        return objectsBoard;
+    public Square[][] getBoard() {
+        return board;
     }
 
-    public static void setObjectsBoard(Square[][] objectsBoard) {
-        Board.objectsBoard = objectsBoard;
+    public void setBoard(Square[][] board) {
+        this.board = board;
     }
-
-    public static int[][] getIntegersBoard() {
-        return integersBoard;
-    }
-
-    public static void setIntegersBoard(int[][] integersBoard) {
-        Board.integersBoard = integersBoard;
-    }
-
+   
 }

@@ -4,39 +4,36 @@ import UI.*;
 
 public class PacManTest {
 
-    public PacManTest() {
-    }
-
     public static void main(String[] args) {
 
-        boolean cond = true;
+    /*    boolean cond = true;
         int option;
 
-        PacManUI.welcome();
+        UIConsole.welcome();
 
         while (cond) {
-            PacManUI.mainMenu();
-            option = PacManUI.readOption();
+            UIConsole.mainMenu();
+            option = UIConsole.readOption();
             switch (option) {
                 case 1:
                     Methods.startGame();
                     break;
                 case 2:
-                    PacManUI.controls();
+                    UIConsole.controls();
                     break;
                 case 3:
-                    PacManUI.about();
+                    UIConsole.about();
                     break;
                 case 0:
                     cond = false;
                     break;
                 default:
-                    PacManUI.invalidOption();
+                    UIConsole.invalidOption();
                     break;
             }
         }
-        PacManUI.farewell();
-
+        UIConsole.farewell();
+        */
     }
 
 }

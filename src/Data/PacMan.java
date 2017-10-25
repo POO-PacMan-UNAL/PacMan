@@ -2,38 +2,58 @@ package Data;
 
 import UI.*;
 
-public class PacMan extends Square {
+public class PacMan {
 
-    private final static int initialI = 10;
+    /*private final static int initialI = 10;
     private final static int initialJ = 13;
     private static int i = 10;
-    private static int j = 13;
+    private static int j = 13;*/
 
-    public static int getInitialI() {
-        return initialI;
+    private Square squarePM;
+    private String symbol;
+    private String image;
+    private boolean alive;
+
+    public PacMan(Square squarePM, String symbol, String image, boolean alive) {
+        this.squarePM = squarePM;
+        this.symbol = symbol;
+        this.image = image;
+        this.alive = alive;
     }
 
-    public static int getInitialJ() {
-        return initialJ;
+    public Square getSquarePM() {
+        return squarePM;
     }
 
-    public static int getI() {
-        return i;
+    public void setSquarePM(Square squarePM) {
+        this.squarePM = squarePM;
     }
 
-    public static void setI(int i) {
-        PacMan.i = i;
+    public String getSymbol() {
+        return symbol;
     }
 
-    public static int getJ() {
-        return j;
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
     }
 
-    public static void setJ(int j) {
-        PacMan.j = j;
+    public String getImage() {
+        return image;
     }
 
-    public static boolean movementPacMan(String movement, int[][] integersBoard, int i, int j) {
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public boolean isAlive() {
+        return alive;
+    }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
+            
+    /*public static boolean movementPacMan(String movement, int[][] integersBoard, int i, int j) {
 
         if (movement.equalsIgnoreCase("w")) {
             if (integersBoard[i - 1][j] == 1 || integersBoard[i - 1][j] == 2) {
@@ -52,7 +72,7 @@ public class PacMan extends Square {
                 integersBoard[i][j] = 0;
                 setI(i + 1);
             }
-            return true;
+            return true; 
         } else if (movement.equalsIgnoreCase("a")) {
             if (integersBoard[i][j - 1] == 1 || integersBoard[i][j - 1] == 2) {
                 PacManUI.hitWall();
@@ -80,11 +100,6 @@ public class PacMan extends Square {
             return true;
         }
 
-    }
-
-    @Override
-    public String toString() {
-        return "e";
-    }
+    }*/
 
 }
