@@ -3,12 +3,13 @@ package BusinessLogic;
 import Data.*;
 import UI.*;
 import java.util.Random;
+import java.applet.AppletContext;
 
 public class Methods {
 
     /*public static void startGame() {
 
-        boolean condition = true;
+        boolean condition = true; hola
         String movement;
         int movementG;
 
@@ -103,5 +104,4 @@ public class Methods {
         }
 
     }*/
-
 }
